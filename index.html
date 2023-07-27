@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mikutap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="backgroundContainer" id="backgroundContainer"></div>
+    <div class="container" id="my_con">
+        <div class="backgroundSwitchanimationContainer" id="back_con"></div>
+        <div class="buttonAnimationContainer" id="ani_con"></div>
+        <div class="startContainer" id="start_con">
+            <p id="title">Mikutap</p>
+            <p id="littleWord">Imitated version</p>
+            <p id="startButton" onclick="startGame()">START</p>
+            <p id="aboutButton" onclick="generateAboutFrame()">ABOUT</p>
+            <p id="prompts">·Raise the volume and enjoy!</p>
+        </div>
+        <div class="aboutFrame" id="about_con">
+            <div  id="infoBack"></div>
+            <div id="information">
+                <p class="backToStartFrame" onclick=backToStartFrame()>X</p>
+                <br>
+                <p>This is a practice for CSS animations</p>
+                <p>I do not onw any rights</p>
+                <a href="https://aidn.jp/mikutap/">Please check the original Page</a>
+            </div>
+        </div>
+        <div class="tips" id="tip_con">
+            <p id="tips">CLICK & DRAG or PRESS ANY KEY!</p>
+            <p id="feedback">FEEDBACK: </p>
+            <p id="backtrack">BACKTRACK: </p>
+        </div>
+        <div class="backToStart" id="gameBack" onclick="fromGameBackToStart()">
+            <p></p>
+        </div>
+        <div class="feedback" id="feedbackid" onclick="changeFeedback()">
+            <p>ON</p>
+        </div>
+        <div class="backtrack" id="backtrackid" onclick="changeBacktrack()">
+            ON
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
